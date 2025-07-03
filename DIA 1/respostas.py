@@ -1,4 +1,5 @@
 
+"""
 # 🔹 Desafio 1 - par ou ímpar
 # Peça para o usuário digitar um número inteiro e informe se ele é par ou ímpar.
 
@@ -84,7 +85,7 @@ elif caracteris == '/':
     print("Resutado é: ", numero1 / numero2)
 else:
     print("Digite um operado matematico valido")
-    
+
     
 #🔹 Desafio 7 – Triângulo válido?
 #Peça três números que representam lados de um triângulo e diga se formam ou não um triângulo válido.
@@ -94,13 +95,56 @@ else:
 # Isósceles (2 lados iguais)
 # Escaleno (3 lados diferentes)
 
+# Entrada dos lados
+lado1 = int(input("Digite o primeiro lado do triângulo: "))
+lado2 = int(input("Digite o segundo lado do triângulo: "))
+lado3 = int(input("Digite o terceiro lado do triângulo: "))
+
+# Verifica se os lados formam um triângulo
+if lado1 + lado2 > lado3 and lado2 + lado3 > lado1 and lado1 + lado3 > lado2:
+    
+    # Agora verifica o tipo do triângulo
+    if lado1 == lado2 == lado3:
+        print("🔺 O triângulo é Equilátero (todos os lados iguais)")
+    elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
+        print("🔺 O triângulo é Isósceles (dois lados iguais)")
+    else:
+        print("🔺 O triângulo é Escaleno (todos os lados diferentes)")
+else:
+    print("❌ Os lados informados NÃO formam um triângulo.")
+
 #🔹 Desafio 8 – Ano bissexto
 # Peça um ano ao usuário e diga se ele é bissexto.
 # 📌 Regras:
 # É bissexto se for divisível por 4 e não por 100, ou divisível por 400.
 
+ano = int(input("Digite um ano: "))
+
+if (ano % 4 == 0 and ano  % 100 != 0) or (ano % 400 == 0):
+    print("o ano é bissexto")
+else:
+    print("O ano não é bissexto")
+    
+
 #🔹 Desafio 9 – Maior número
 # Peça 3 números diferentes ao usuário e diga qual é o maior deles.
+
+
+
+difnum1 = int(input("Digite um número: "))
+difnum2 = int(input("Digite outro número diferente: "))
+difnum3 = int(input("Digite outro número diferente: "))
+
+if difnum1 == difnum2 == difnum3:
+    print("Falei pra escrever número diferente 😤")
+else:
+    if difnum1 > difnum2 and difnum1 > difnum3:
+        print(f"O maior número é: {difnum1}")
+    elif difnum2 > difnum1 and difnum2 > difnum3:
+        print(f"O maior número é: {difnum2}")
+    else:
+        print(f"O maior número é: {difnum3}")
+
 
 # 🔹 Desafio 10 – Loja de desconto
 # Peça o valor total de uma compra.
@@ -108,7 +152,22 @@ else:
 # Caso contrário, diga que não há desconto.
 # Mostre o valor final.
 
+desconto = float(input("Digite o valor da sua compra: "))
+
+if desconto >= 100:
+    novo_valor = desconto * 0.9
+    print(f"O valor com desconto é: R${novo_valor:.2f}")
+else:
+    print("Não tem desconto")
+"""
+
 # 🔹 Desafio 11 – Verificador de senha
 # Peça ao usuário uma senha.
 # Se a senha for igual a "python123" (ou qualquer senha que você definir), diga "Acesso permitido", senão "Acesso negado".
 
+senha = str(input("Digite uma senha: "))
+
+if senha == "Python123":
+    print("Senha correta")
+else:
+    print("Senha errada")

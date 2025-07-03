@@ -1,5 +1,5 @@
 """
-Lógica de Programação – Dia 1: Condicionais (if, elif, else)
+Lógica de Programação Dia 1: Condicionais (if, elif, else)
 1. O que são condicionais?
 Condicionais são estruturas que permitem que o programa tome decisões baseadas em certas condições. Por exemplo:
 
