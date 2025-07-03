@@ -5,7 +5,7 @@ Este repositório contém um plano de **30 dias de prática de lógica de progra
 ## 📌 Como funciona?
 - Cada dia tem uma **pasta própria**, numerada de `Dia 01` até `Dia 30`.
 - Dentro de cada pasta, você encontrará dois arquivos:
-  - `desafio.md` → onde está a explicação do desafio.
+  - `desafio.py` → onde está a explicação do desafio.
   - `resposta.py` → onde está (ou estará) sua solução para o desafio.
 
 ## 🔥 Progresso
